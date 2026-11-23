@@ -1,0 +1,37 @@
+{
+  "dataset": "uaStend.com 2026 Freelance Net Income Tax Reference (RU / UK)",
+  "live_calculator": "https://uastend.com/freelance-tax-eu-calculator/",
+  "benchmark_monthly_gross_eur": 3000,
+  "regimes": [
+    {
+      "country": "Georgia",
+      "regime": "IE Small Business (1%)",
+      "headline_rate": "1% turnover (<500k GEL/yr)",
+      "est_net_eur_on_3000": 2915
+    },
+    {
+      "country": "Ukraine",
+      "regime": "ФОП 3-я группа",
+      "headline_rate": "5% ЕН + 1% Военный сбор + ЕСВ",
+      "est_net_eur_on_3000": 2745
+    },
+    {
+      "country": "Kazakhstan",
+      "regime": "ИП на упрощёнке",
+      "headline_rate": "3% + соцвзносы",
+      "est_net_eur_on_3000": 2690
+    },
+    {
+      "country": "Poland",
+      "regime": "JDG Ryczałt (IT 12%)",
+      "headline_rate": "12% + Mały ZUS / zdrowotna",
+      "est_net_eur_on_3000": 2330
+    },
+    {
+      "country": "Germany",
+      "regime": "Freiberufler",
+      "headline_rate": "Progressive ESt + GKV",
+      "est_net_eur_on_3000": 1860
+    }
+  ]
+}
