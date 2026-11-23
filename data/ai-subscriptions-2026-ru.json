@@ -1,0 +1,66 @@
+{
+  "schema_version": "2026.11",
+  "updated": "2026-11-23",
+  "source_article": "https://uastend.com/technologies/podpiski-na-nejroseti-2026-sravnenie-chatgpt-claude-gemini-cursor/",
+  "tools": {
+    "ai_prompts_catalog": "https://uastend.com/ai-prompts-catalog/",
+    "freelance_tax_calculator": "https://uastend.com/freelance-tax-eu-calculator/",
+    "for_authors": "https://uastend.com/for-authors/"
+  },
+  "subscriptions_usd_month": [
+    {
+      "id": "chatgpt_go",
+      "name": "ChatGPT Go",
+      "usd_month": 8,
+      "notes": "Без рекламы, базовые лимиты"
+    },
+    {
+      "id": "chatgpt_plus",
+      "name": "ChatGPT Plus (+Codex)",
+      "usd_month": 20,
+      "notes": "Универсальный комбайн + Codex"
+    },
+    {
+      "id": "claude_pro_yr",
+      "name": "Claude Pro (годовая)",
+      "usd_month": 17,
+      "notes": "Включает Claude Code, $200/год"
+    },
+    {
+      "id": "claude_pro",
+      "name": "Claude Pro (помесячно)",
+      "usd_month": 20,
+      "notes": "Код, тексты, аналитика + Claude Code"
+    },
+    {
+      "id": "claude_max",
+      "name": "Claude Max (5x)",
+      "usd_month": 100,
+      "notes": "Для интенсивной ежедневной работы"
+    },
+    {
+      "id": "google_ai_plus",
+      "name": "Google AI Plus",
+      "usd_month": 5,
+      "notes": "Лёгкий тариф Gemini"
+    },
+    {
+      "id": "google_ai_pro",
+      "name": "Google AI Pro",
+      "usd_month": 20,
+      "notes": "Gemini + облако Google One и Workspace"
+    },
+    {
+      "id": "copilot_pro",
+      "name": "GitHub Copilot Pro",
+      "usd_month": 10,
+      "notes": "1 500 AI Credits ($15 эквивалент)"
+    },
+    {
+      "id": "cursor_x_prem",
+      "name": "Cursor X Premium",
+      "usd_month": 30,
+      "notes": "Недельный пул Cursor/Grok, сторонние модели по API"
+    }
+  ]
+}
