@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Калькулятор ИИ-подписок и окупаемости фрилансера 2026 — uaStend Open Tools</title>
+<meta name="description" content="Интерактивный расчёт стоимости ИИ-подписок конца 2026 года (ChatGPT Plus, Claude Pro, Google AI Pro, Cursor X, GitHub Copilot) и точки окупаемости для фрилансера.">
+<style>
+  :root{--bg:#0b1120;--card:#111827;--bd:#1f2937;--fg:#f8fafc;--mut:#94a3b8;--acc:#38bdf8;--ok:#34d399;--warn:#fbbf24}
+  *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+  .wrap{max-width:960px;margin:0 auto;padding:32px 20px 60px}
+  h1{font-size:clamp(1.55rem,3vw,2.2rem);margin:0 0 10px}
+  p.lead{color:var(--mut);font-size:1.03rem;margin:0 0 24px}
+  .card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:22px;margin:18px 0}
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+  .plan{display:flex;gap:10px;align-items:center;padding:11px 13px;border-radius:10px;background:#0f172a;border:1px solid var(--bd);cursor:pointer;font-size:14px}
+  .plan input{transform:scale(1.15);accent-color:#38bdf8}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+  .kpi{background:#0f172a;border:1px solid var(--bd);border-radius:10px;padding:14px}
+  .kpi .lbl{font-size:12px;color:var(--mut);text-transform:uppercase;font-weight:700}
+  .kpi .val{font-size:1.45rem;font-weight:800;margin-top:4px;color:var(--ok)}
+  a{color:var(--acc);text-decoration:none;font-weight:600} a:hover{text-decoration:underline}
+  ul.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;list-style:none;padding:0;margin:12px 0 0}
+  ul.links li{background:#0f172a;border:1px solid var(--bd);border-radius:10px;padding:12px 14px}
+  .badge{display:inline-block;padding:3px 9px;border-radius:999px;background:#064e3b;color:#6ee7b7;font-size:12px;font-weight:700;margin-bottom:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">Открытые данные 2026 &bull; Ноябрь 2026</span>
+  <h1>Калькулятор ИИ-подписок и окупаемости (2026)</h1>
+  <p class="lead">Соберите свой рабочий стек нейросетей и проверьте реальные расходы в год и сколько часов нужно экономить, чтобы подписки окупились. Подробный разбор тарифов на <a href="https://uastend.com/technologies/podpiski-na-nejroseti-2026-sravnenie-chatgpt-claude-gemini-cursor/">uaStend.com</a>.</p>
+
+  <div class="card">
+    <h2 style="margin:0 0 12px;font-size:1.15rem;">Отметьте ваши подписки</h2>
+    <div class="plans">
+      <label class="plan"><input type="checkbox" class="p" value="10" checked><span>GitHub Copilot Pro ($10/мес)</span></label>
+      <label class="plan"><input type="checkbox" class="p" value="17" checked><span>Claude Pro годовой ($17/мес)</span></label>
+      <label class="plan"><input type="checkbox" class="p" value="20"><span>ChatGPT Plus ($20/мес)</span></label>
+      <label class="plan"><input type="checkbox" class="p" value="20"><span>Google AI Pro ($19.99/мес)</span></label>
+      <label class="plan"><input type="checkbox" class="p" value="30"><span>Cursor X Premium ($30/мес)</span></label>
+      <label class="plan"><input type="checkbox" class="p" value="100"><span>Claude Max / ChatGPT Pro 100 ($100/мес)</span></label>
+    </div>
+    <div style="margin-top:16px;">
+      <label style="display:flex;justify-content:space-between;font-weight:700;font-size:14px;"><span>Ваша часовая ставка фрилансера (USD/час)</span><span id="rateOut">$22/час</span></label>
+      <input id="rate" type="range" min="8" max="80" value="22" style="width:100%;accent-color:#38bdf8">
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="lbl">Расход в месяц</div><div class="val" id="mOut">$27</div></div>
+      <div class="kpi"><div class="lbl">Расход за 12 месяцев</div><div class="val" id="yOut" style="color:var(--acc)">$324</div></div>
+      <div class="kpi"><div class="lbl">Окупаемость (часов/мес)</div><div class="val" id="hOut" style="color:var(--warn)">1.2 ч</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="margin:0 0 8px;font-size:1.15rem;">Инструменты и гайды 2026 на uaStend.com</h2>
+    <ul class="links">
+      <li><a href="https://uastend.com/technologies/podpiski-na-nejroseti-2026-sravnenie-chatgpt-claude-gemini-cursor/">Полный обзор ИИ-подписок конца 2026 &rarr;</a></li>
+      <li><a href="https://uastend.com/ai-prompts-catalog/">Каталог ИИ-промптов 2026 &rarr;</a></li>
+      <li><a href="https://uastend.com/freelance-tax-eu-calculator/">Калькулятор налогов фрилансера (ЕС/Украина) &rarr;</a></li>
+      <li><a href="https://uastend.com/news/yak-fop-v-ukrayini-otrymuvaty-oplatu-z-yes-ta-ssha-2026-swift-wise-payoneer/">Як ФОП отримувати оплату з ЄС та США 2026 &rarr;</a></li>
+      <li><a href="https://github.com/us-group-hub/uastend-open-tools/blob/main/data/ai-subscriptions-2026-ru.json">Открытый JSON-датасет на GitHub &rarr;</a></li>
+      <li><a href="https://uastend.com/for-authors/">Монетизация авторов и блогеров &rarr;</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+const ps=[...document.querySelectorAll('.p')],rate=document.getElementById('rate');
+function calc(){
+  const m=ps.filter(x=>x.checked).reduce((a,b)=>a+Number(b.value),0);
+  const r=+rate.value;
+  document.getElementById('rateOut').textContent='$'+r+'/час';
+  document.getElementById('mOut').textContent='$'+m;
+  document.getElementById('yOut').textContent='$'+(m*12).toLocaleString('en-US');
+  document.getElementById('hOut').textContent=(m/r).toFixed(1)+' ч';
+}
+ps.forEach(x=>x.onchange=calc);rate.oninput=calc;calc();
+</script>
+</body>
+</html>
