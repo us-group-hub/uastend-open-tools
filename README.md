@@ -41,3 +41,10 @@
 - Мои статьи (фронтенд-публикация): [https://uastend.com/dashboard/](https://uastend.com/dashboard/)
 - О редакции и правила авторов: [https://uastend.com/about/](https://uastend.com/about/) · [https://uastend.com/editorial-policy/](https://uastend.com/editorial-policy/)
 - Telegram-канал: [https://t.me/uastend](https://t.me/uastend) · X: [https://x.com/uastend_com](https://x.com/uastend_com)
+
+## Интерактивный калькулятор ИИ-подписок и датасет ноября 2026 (`v1.1.0`)
+
+- **Калькулятор окупаемости ИИ-подписок (GitHub Pages):** [https://us-group-hub.github.io/uastend-open-tools/](https://us-group-hub.github.io/uastend-open-tools/)
+- **Открытый датасет тарифов (JSON):** [`data/ai-subscriptions-2026-ru.json`](data/ai-subscriptions-2026-ru.json) — актуальные цены ноября 2026 для ChatGPT Go/Plus/Pro, Claude Pro/Max/Ultra, Google AI Pro, Cursor X и GitHub Copilot.
+- **Полный разбор на сайте:** [Подписки на нейросети в конце 2026 года — uaStend.com](https://uastend.com/technologies/podpiski-na-nejroseti-2026-sravnenie-chatgpt-claude-gemini-cursor/)
+- **Каталог ИИ-промптов и калькулятор налогов фрилансера:** [Каталог промптов](https://uastend.com/ai-prompts-catalog/) · [Калькулятор ФОП/ЕС](https://uastend.com/freelance-tax-eu-calculator/)
